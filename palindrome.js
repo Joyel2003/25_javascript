@@ -1,0 +1,10 @@
+//check whether the given string is palindrome or not
+function isPalindrome(str){
+    let reversedStr = '';
+    for(let i = str.length - 1; i >= 0; i--){
+        reversedStr += str[i];
+    }
+    return str === reversedStr;
+}
+console.log(isPalindrome('racecar'));
+console.log(isPalindrome('Joyel'));
