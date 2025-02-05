@@ -21,7 +21,7 @@ console.log(isDiagonalMatrix([[1, 0, 0], [0, 2, 0], [0,0,3]]));
 function runTests() {
     [[[1,0,0],[0,2,0],[0,0,3]],1], [[[5,0],[0,6]],1], [[[1,2,0],[0,3,0],[0,0,4]],0], 
     [[[7,0,0],[0,8,9],[0,0,2]],0], [[[4]],1], [[[1,0],[2,3]],0], [[[1,0,0],[0,2,0]],0]
-    .forEach(([m, e], i) => console.log(`${isDiagonalMatrix(m) == e ? 'PASS' : 'FAIL'} Test ${i+1}`));
+    .forEach(([m, e], i) => console.log(`${isDiagonalMatrix(m) == e ? '✅' : '❌'} Test ${i+1}`));
 }
 
 runTests();
