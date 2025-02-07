@@ -7,3 +7,16 @@ function isPalindrome(str){
     return str === reversedStr;
 }
 console.log(isPalindrome('racecar'));
+
+//test case
+function testCase(){
+    const tests =[
+        {input: "racecar", expected: true},
+        {input: "madam", expected:true},
+        {input: "122p", expected:true},
+    ];
+    tests.forEach(({input, expected }, index) =>{
+        console.log(`Test ${index + 1}: ${isPalindrome(input) === expected ? "PASS Passed" : "FAIL Failed"}`);
+    });
+}
+testCase();

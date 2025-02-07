@@ -8,3 +8,19 @@ function isPalindrome(str){
 }
 console.log(isPalindrome('racecar'));
 console.log(isPalindrome('Joyel'));
+
+//test case
+function testCase(){
+    const tests = [
+        {input: "racecar", expected: true},
+        {input: "madam", expected:true},
+        {input: "hello", expected:true},
+        {input: "world", expected:false},   
+    ];
+
+    tests.forEach(({input, expected}, index) =>{
+        const result = isPalindrome(input);
+        console.log(result === expected ? `Test ${index + 1} PASS` : `Test ${index + 1} FAIL`);
+    });
+}
+testCase();
