@@ -22,4 +22,3 @@ function isPrime(num) {
 }
 
 console.log(findPrimes(10)); 
-

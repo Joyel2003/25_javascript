@@ -20,3 +20,19 @@ const findMostRepeatedValue = (arr) => {
 }
 const numbers = [1,5,7,8,9,6,5,5,5,7,2,5,4,7];
 console.log(findMostRepeatedValue(numbers));
+
+//test case 
+
+const testCase = () =>{
+    const tests = [
+        {input: [1,5,7,8,9,6,5,5,5,7,2,5,4,7,], expected: 5},
+        {input: [2,3,3,2,2,4,4,4,4,5], expected: 5},
+        {input: [], expected: null},
+    ];
+
+    tests.forEach(({input, expected}, index) =>
+    console.log(`Test ${index + 1}: ${findMostRepeatedValue(input) === expected ? " Passed" : "Failed"}`)
+);
+};
+
+testCase();
